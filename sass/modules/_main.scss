@@ -1,0 +1,66 @@
+.portfolio_gallery{
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 1135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.thumbnail{
+    background-color: #00C1DE;
+    display: flex;
+    width: 349px;
+    height: 349px;
+    border-radius: 25px;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.arrow{
+    width: 55px;
+    position: absolute;
+    margin: 15px;
+}
+
+.my_skills{
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 1135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    h1{
+        width: 800px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    }
+
+    .skills_list{
+        width: 1135px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .skill_thumbnail{
+        width: 219px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        text-align: center;
+        margin-bottom: 50px;
+
+        img{
+            width: 219px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+}

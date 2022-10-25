@@ -1,0 +1,38 @@
+header{
+    position: absolute;
+    display: flex;
+    width: 1440px;
+    height: 200px;
+
+    .main_logo{
+        width: 286px;
+    }
+
+    .mainNav{
+        display: flex;
+        margin: 25px 0 0 0;
+        justify-content: space-around;
+        width: 400px;
+    }
+
+    a{
+        font-size: 25px;
+        font-family: 'Anek Malayalam', sans-serif;
+        font-weight: 500;
+        color:white;
+        text-decoration: none;
+    }
+
+    a:hover{ color:#00C1DE}
+}
+
+    .menu{
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+
+

@@ -1,0 +1,25 @@
+.home_header {
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-size: 40px;
+        font-family: 'Anek Malayalam', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-align: left;
+    }
+
+    p{
+        font-size: 30px;
+        font-family: 'Anek Malayalam', sans-serif;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+.home_title{
+    width: 500px;
+    position: absolute;
+    margin: 300px 0 0 50px;
+}
