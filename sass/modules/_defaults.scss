@@ -8,14 +8,15 @@ body {
     .hidden {
         display: none;}
 
-        h1{
+        h2{
             font-size: 40px;
             font-family: 'Anek Malayalam', sans-serif;
             font-weight: 700;
             color: #005984;
+            text-align: center;
         }
 
-        h2{
+        h3{
             font-size: 30px;
             font-family: 'Anek Malayalam', sans-serif;
             font-weight: 300;
@@ -28,4 +29,12 @@ body {
             font-weight: 300;
             color: #005984;
         }
+}
+
+@media screen and (max-width: 576px) {
+    
+    body {
+        width: 576px;
+    }
+
 }

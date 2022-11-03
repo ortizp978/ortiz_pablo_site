@@ -12,7 +12,15 @@ footer{
         width: 1135px;
         justify-content: space-between;
 
-        h1, p{color: white;}
+        h2 {
+            color: white;
+            text-align: left;
+        }
+
+        p {
+            color: white;
+            text-align: left;
+        }
         
     }
 
@@ -24,4 +32,21 @@ footer{
     justify-content: space-between;
     width: 55px;
     height: 130px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    footer {
+        width: 576px;
+    
+        .footer_info {
+            display: flex;
+            align-items: center;
+            width: 450px;
+        }
+
+        h2 {font-size: 30px;}
+        p{font-size: 22px;}
+    }
 }

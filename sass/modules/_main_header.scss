@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
 
-    h1{
+    h2{
         font-size: 40px;
         font-family: 'Anek Malayalam', sans-serif;
         font-weight: 700;
@@ -22,4 +22,18 @@
     width: 500px;
     position: absolute;
     margin: 300px 0 0 50px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .home_title {
+        width: 400px;
+        margin-top: 480px;
+
+        h2 {font-size: 30px;}
+        p{font-size: 22px;}
+    }
+
+
 }

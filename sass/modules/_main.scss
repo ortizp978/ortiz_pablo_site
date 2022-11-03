@@ -8,19 +8,28 @@
 }
 
 .thumbnail{
-    background-color: #00C1DE;
     display: flex;
     width: 349px;
     height: 349px;
-    border-radius: 25px;
-    justify-content: right;
+    justify-content: left;
     align-items: flex-end;
+    margin-bottom: 25px;
+    transition: scale 0.2s ease;
+
+    H2 {
+        position: absolute;
+        margin: 30px;
+        font-size: 30px;
+        color: white;
+    }
 }
+
+.thumbnail:hover {scale: 105%;}
 
 .arrow{
     width: 55px;
     position: absolute;
-    margin: 15px;
+    margin: 25px;
 }
 
 .my_skills{
@@ -31,7 +40,7 @@
     flex-direction: row;
     justify-content: space-around;
 
-    h1{
+    h2{
         width: 800px;
         text-align: center;
         margin-bottom: 50px;
@@ -60,7 +69,37 @@
             margin-bottom: 15px;
         }
 
-        h2{
+        h3{
             font-size: 20px;
         }
+}
+
+@media screen and (max-width: 576px) {
+
+    .portfolio_gallery{
+        width: 576px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my_skills {
+        width: 576px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            width: 450px;
+            font-size: 30px;
+        }
+
+        .skills_list {
+            width: 576px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
 }

@@ -3,12 +3,14 @@ header{
     display: flex;
     width: 1440px;
     height: 200px;
+    padding: 50px;
+    justify-content: space-between;
 
     .main_logo{
         width: 286px;
     }
 
-    .mainNav{
+    .main_menu{
         display: flex;
         margin: 25px 0 0 0;
         justify-content: space-around;
@@ -26,13 +28,44 @@ header{
     a:hover{ color:#00C1DE}
 }
 
-    .menu{
-        padding: 50px;
+@media screen and (min-width: 576px) {.toggle_menu {display: none;}}
+
+
+@media screen and (max-width: 576px) {
+    
+header {
+    width: 576px;
+    padding: 30px 40px;
+    align-items: center;
+
+    .main_menu {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 170px;
+        height: 200px;
+        text-align: center;
+        margin: 0;
+        transform: translateY(-150%);
+        transition: transform 0.3s;
+        background-color: #005984;
     }
 
+    .toggle_menu {
+        position: absolute;
+        width: 50px;
+        cursor: pointer;
+    }
 
+    .main_menu--show {
+        transform: translateY(0);
+    }
+}
 
+.main_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
+}
