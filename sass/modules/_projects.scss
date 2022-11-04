@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 1440px;
-    height: 2420px;
+    height: 2450px;
     background-color: #0081C6;
     margin-bottom: 50px;
     align-items: center;
@@ -38,11 +38,35 @@
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+    position: absolute;
+    margin-top: 400px;
 }
 
 .gallery_image{
     width: 1140px;
     height: 650px;
     background-color: aquamarine;
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+
+    .project_header{
+        width: 576px;
+        height: 1450px;
+    }
+
+    .project_title {
+        width: 400px;
+        margin-top: 200px;
+
+        h2 {font-size: 30px;}
+        p{font-size: 22px;}
+    }
+
+    .gallery_image{
+        width: 576px;
+        height: 328px;
+    }
+
 }

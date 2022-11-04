@@ -64,4 +64,31 @@
         font-weight: 700;
         color: white;
         margin-top: 10px;
+        transition: scale 0.2s ease;
+}
+
+.sendButtom:hover {scale: 105%;}
+
+
+@media screen and (max-width: 576px) {
+
+    .contact_header {
+        width: 576px;
+    }    
+
+    .contact_area{
+        flex-direction: column;
+        width: 470px;
+    }
+
+    .contact_form{
+        width: 470px;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .contact_text{
+        width: 470px;
+        padding: 0;   
+    }
 }
