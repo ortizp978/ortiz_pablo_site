@@ -49,11 +49,11 @@
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
 
     .project_header{
-        width: 576px;
-        height: 1450px;
+        width: 450px;
+        height: 1670px;
     }
 
     .project_title {
@@ -65,8 +65,8 @@
     }
 
     .gallery_image{
-        width: 576px;
-        height: 328px;
+        width: 450px;
+        height: 400px;
     }
 
 }

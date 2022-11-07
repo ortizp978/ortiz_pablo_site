@@ -28,13 +28,13 @@ header{
     a:hover{ color:#00C1DE}
 }
 
-@media screen and (min-width: 576px) {.toggle_menu {display: none;}}
+@media screen and (min-width: 500px) {.toggle_menu {display: none;}}
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
     
 header {
-    width: 576px;
+    width: 450px;
     padding: 30px 40px;
     align-items: center;
 
@@ -42,10 +42,10 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 170px;
+        width: 130px;
         height: 200px;
         text-align: center;
-        margin: 0;
+        margin: 0 0 0 10px;
         transform: translateY(-150%);
         transition: transform 0.3s;
         background-color: #005984;
@@ -54,6 +54,7 @@ header {
     .toggle_menu {
         position: absolute;
         width: 50px;
+        margin-left: 20px;
         cursor: pointer;
     }
 

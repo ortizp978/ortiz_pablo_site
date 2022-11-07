@@ -16,7 +16,7 @@
 
 .contact_form{
     width: 851px;
-    height: 560px;
+    height: 510px;
     display: flex;
     flex-direction: column;
     padding: 20px 50px 0 0;
@@ -70,25 +70,25 @@
 .sendButtom:hover {scale: 105%;}
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
 
     .contact_header {
-        width: 576px;
+        width: 450px;
     }    
 
     .contact_area{
         flex-direction: column;
-        width: 470px;
+        width: 400px;
     }
 
     .contact_form{
-        width: 470px;
+        width: 400px;
         margin-top: 10px;
         padding: 0;
     }
 
     .contact_text{
-        width: 470px;
+        width: 380px;
         padding: 0;   
     }
 }
