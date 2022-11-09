@@ -42,10 +42,10 @@
         }
     }
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 450px) {
 
         .testimonies{
-            width: 576px;
+            width: 450px;
 
             h2{
                 width: 450px;
@@ -54,7 +54,7 @@
         }
 
         .testimonies_list{
-            width: 576px;
+            width: 450px;
             display: flex;
             flex-direction: column;
             align-items: center;

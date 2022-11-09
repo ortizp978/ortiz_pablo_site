@@ -77,14 +77,14 @@
 @media screen and (max-width: 576px) {
 
     .portfolio_gallery{
-        width: 576px;
+        width: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .my_skills {
-        width: 576px;
+        width: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -95,7 +95,7 @@
         }
 
         .skills_list {
-            width: 576px;
+            width: 450px;
             display: flex;
             flex-direction: column;
             align-items: center;
