@@ -25,12 +25,12 @@
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 360px) {
 
     .home_title {
-        width: 380px;
+        width: 360px;
         margin-top: 380px;
-        margin-left: 25px;
+        margin-left: 0;
 
         h2 {font-size: 30px; text-align: center;}
         p{font-size: 22px; text-align: center;}

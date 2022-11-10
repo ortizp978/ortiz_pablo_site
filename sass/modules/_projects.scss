@@ -49,27 +49,27 @@
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 360px) {
 
     .project_gallery{
-        width: 450px;
+        width: 360px;
     }
 
     .project_header{
-        width: 450px;
+        width: 360px;
         height: 1670px;
     }
 
     .project_title {
-        width: 400px;
-        margin-top: 200px;
+        width: 360px;
+        margin-top: 170px;
 
         h2 {font-size: 30px;}
         p{font-size: 22px;}
     }
 
     .gallery_image{
-        width: 450px;
+        width: 360px;
         height: 400px;
     }
 

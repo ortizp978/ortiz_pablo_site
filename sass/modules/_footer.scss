@@ -35,15 +35,15 @@ footer{
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 360px) {
 
     footer {
-        width: 450px;
+        width: 360px;
     
         .footer_info {
             display: flex;
             align-items: center;
-            width: 350px;
+            width: 300px;
         }
 
         h2 {font-size: 30px;}

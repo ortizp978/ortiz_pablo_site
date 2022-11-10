@@ -9,8 +9,8 @@
 
 .thumbnail{
     display: flex;
-    width: 349px;
-    height: 349px;
+    width: 320px;
+    height: 320px;
     justify-content: left;
     align-items: flex-end;
     margin-bottom: 25px;
@@ -74,28 +74,28 @@
         }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 360px) {
 
     .portfolio_gallery{
-        width: 450px;
+        width: 360px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .my_skills {
-        width: 450px;
+        width: 360px;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         h2{
-            width: 450px;
+            width: 360px;
             font-size: 30px;
         }
 
         .skills_list {
-            width: 450px;
+            width: 360px;
             display: flex;
             flex-direction: column;
             align-items: center;
