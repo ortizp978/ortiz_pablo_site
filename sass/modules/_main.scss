@@ -1,7 +1,7 @@
 .portfolio_gallery{
     flex-wrap: wrap;
     margin-top: 50px;
-    width: 1135px;
+    width: 85vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -9,17 +9,19 @@
 
 .thumbnail{
     display: flex;
-    width: 320px;
-    height: 320px;
+    width: 240px;
+    height: 260px;
     justify-content: left;
     align-items: flex-end;
     margin-bottom: 25px;
     transition: scale 0.2s ease;
+    background-color: gray;
+    border-radius: 20px;
 
     H2 {
         position: absolute;
         margin: 30px;
-        font-size: 30px;
+        font-size: 25px;
         color: white;
     }
 }
@@ -33,25 +35,24 @@
 }
 
 .my_skills{
-    flex-wrap: wrap;
-    margin-top: 50px;
-    width: 1135px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 80vw;
     justify-content: space-around;
 
     h2{
-        width: 800px;
+        width: 79vw;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     }
 
     .skills_list{
-        width: 1135px;
+        width: 80vw;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 
@@ -61,7 +62,7 @@
         flex-direction: column;
         justify-content: right;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
 
         img{
             width: 219px;
@@ -90,8 +91,7 @@
         align-items: center;
 
         h2{
-            width: 360px;
-            font-size: 30px;
+            width: 80vw;
         }
 
         .skills_list {
