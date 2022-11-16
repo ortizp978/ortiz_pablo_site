@@ -1,0 +1,9 @@
+.hero_image {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    img {width: 100vw;}
+}

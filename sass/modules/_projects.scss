@@ -1,3 +1,11 @@
+.gallery_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
 .project_header{
     display: flex;
     flex-direction: column;
@@ -6,25 +14,23 @@
     margin-bottom: 50px;
     align-items: center;
 
+}
+
+.project_title{
+    width: 70vw;
+    margin: 20px 0 0 0;
+
     h2{
         font-family: 'Anek Malayalam', sans-serif;
         font-weight: 700;
-        color: white;
         text-align: center;
     }
 
     p{
         font-family: 'Anek Malayalam', sans-serif;
         font-weight: 500;
-        color: white;
         text-align: center;
     }
-}
-
-.project_title{
-    width: 70vw;
-    position: absolute;
-    margin: 200px 0 0 0;
 }
 
 .project_gallery{
@@ -46,19 +52,18 @@
     img{width: 100%;}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 
     .project_gallery{
-        width: 360px;
+        width: 95vw;
     }
 
     .project_header{
-        width: 360px;
+        width: 100vw;
     }
 
     .project_title {
-        width: 300px;
-        margin-top: 185px;
+        width: 80vw;
     }
 
     .gallery_image{

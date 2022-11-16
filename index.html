@@ -24,32 +24,33 @@
             <ul id="main_menu" class="main_menu">
                 <li><a href="index.html" class="main_menu_item">WORK</a></li>
                 <li><a href="about.html" class="main_menu_item">ABOUT</a></li>
-                <li><a href="contact.html" class="main_menu_item">CONTACT</a></li>
+                <li><a href="#primerp" class="main_menu_item">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="home_header">
+    <section class="hero_image">
+        <h2 class="hidden"> Hero Image Section</h2>
         <picture>
-        <source srcset="images/work_image_m.jpg" media="(max-width: 360px)">
-        <img src="images/work_image.jpg" alt="Work section main photo">
+            <source id="main_image" srcset="images/main_image_m.jpg" media="(max-width: 600px)">
+            <img src="images/main_image.jpg" alt="Work section main photo">
         </picture>
-        <div class="home_title">    
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque et est eu faucibus. Maecenas mauris libero.</p></div>
     </section>
 
+    <div class="main_title"><h2>Bien responsive design pues</h2></div>
     <section class="portfolio_gallery">
-        <div class="thumbnail"><a href="projects.html"><img src="" alt="Work section main photo"></a>
+        <div class="thumbnail"><a href="projects.html"><img src="images/work1.png" alt="Work section main photo"></a>
+            <h2>Textico larguito pa probar</h2>
+        </div>
+        <div class="thumbnail"><a href="projects.html"><img src="images/work1.png" alt="Work section main photo"></a>
             <h2>PROJECT 1</h2>
         </div>
-        <div class="thumbnail"><a href="projects.html"><img src="" alt="Work section main photo"></a>
+        <div class="thumbnail"><a href="projects.html"><img src="images/work1.png" alt="Work section main photo"></a>
             <h2>PROJECT 1</h2>
         </div>
-        <div class="thumbnail"><a href="projects.html"><img src="" alt="Work section main photo"></a>
+        <div class="thumbnail"><a href="projects.html"><img src="images/work1.png" alt="Work section main photo"></a>
             <h2>PROJECT 1</h2>
-        </div><div class="thumbnail"><a href="projects.html"><img src="" alt="Work section main photo"></a>
-            <h2>PROJECT 1</h2>
+        </div>
     </section>
 
     <section class="my_skills">
@@ -70,9 +71,19 @@
         </div>
     </section>
 
-    <section class="contact_footer">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque.</h2>
-        <a class="contact_buttom" href="contact.html">CONTACT</a>
+    <section class="contact_header" id="primerp">
+        <h2 class="hidden"> Contact Area</h2>
+    <div class="contact_area" id="DRM">
+    
+        <div class="contact_text"><p>Lorem ipsum dolor sit amet, consectetur adipif ngak gnkf adg njakf gnak ngkf ngsc ing elit. Ut scelerisque et est eu faucibus. Maecenas mauris libero. Lorem ipsum dolor sit amet, consectetur adipif ngak gnkf adg njakf gnak ngkf ngsc ing elit. Ut scelerisque et est eu faucibus. Maecenas mauris libero.</p></div>
+
+        <form class="contact_form" action="email.php" method="POST" enctype="text/plain">
+            <input class="name" name="firstname" type="text" placeholder="NAME">
+            <input class="email" name="lastname" type="text" placeholder="EMAIL">
+            <textarea class="subject" name="msg" placeholder="MESSAGE"></textarea>
+            <input class="sendButtom" name="submit" type="submit" value="SEND">
+        </form>
+    </div>
     </section>
 
     <footer>

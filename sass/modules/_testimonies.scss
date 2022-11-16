@@ -1,4 +1,5 @@
 .testimonies{
+    padding: 3vw;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -7,7 +8,7 @@
     background-color: gray;
 
     h2{
-        width: 80vw;
+        width: 60vw;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -15,14 +16,13 @@
     }
 
     .testimonies_list{
-        width: 90vw;
+        width: 70vw;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
 
     .testimonie_thumbnail{
+        margin: 0 1vw;
         background-color: aqua;
         border-radius: 25px;
         width: 28vw;
@@ -34,7 +34,7 @@
     }
 
     .testimonie_text{
-        width: 22vw;
+        width: 20vw;
         margin: 20px auto;
         flex-direction: column;
         display: flex;
@@ -45,16 +45,7 @@
         }
     }
 
-    @media screen and (max-width: 360px) {
-
-        .testimonies{
-            width: 360px;
-
-            h2{
-                width: 360px;
-                font-size: 30px;
-            }
-        }
+    @media screen and (max-width: 800px) {
 
         .testimonies_list{
             width: 90vw;
@@ -64,13 +55,23 @@
             }
 
             .testimonie_thumbnail{
-                width: 90vw;
-        
-                img{width: 100%;}
+                width: 80vw;
             }
 
             .testimonie_text{
-                width: 75vw;
+                width: 70vw;
             }
+
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .testimonies{
+
+            h2{
+                width: 80vw;
+                font-size: 30px;
+            }
+        }
     
     }

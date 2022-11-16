@@ -1,28 +1,57 @@
+.main_title{
+    margin: 1vw 0;
+    width: 80vw;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+    h2 {
+        font-size: 6vw;
+    }
+}
+
 .portfolio_gallery{
     flex-wrap: wrap;
-    margin-top: 50px;
-    width: 85vw;
+    margin-top: 1vw;
+    width: 80vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .thumbnail{
     display: flex;
-    width: 240px;
-    height: 260px;
+    width: 18vw;
     justify-content: left;
     align-items: flex-end;
-    margin-bottom: 25px;
+    margin: 7px;
     transition: scale 0.2s ease;
-    background-color: gray;
     border-radius: 20px;
 
-    H2 {
+    img {width: 100%;}
+
+    h2 {
+        width: 16vw;
         position: absolute;
         margin: 30px;
-        font-size: 25px;
+        font-size: 2vw;
         color: white;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+
+    .portfolio_gallery{
+        width: 95vw;
+    }
+
+    .thumbnail {
+        width: 240px;
+
+        h2 {
+        width: 200px;
+        font-size: 25px;}
     }
 }
 
@@ -37,12 +66,12 @@
 .my_skills{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 70px;
     width: 80vw;
-    justify-content: space-around;
+    align-items: center;
 
     h2{
-        width: 79vw;
+        width: 60vw;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -53,11 +82,12 @@
         width: 80vw;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .skill_thumbnail{
         width: 219px;
+        margin: 0 7px;
         display: flex;
         flex-direction: column;
         justify-content: right;
@@ -75,31 +105,23 @@
         }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 
-    .portfolio_gallery{
-        width: 360px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    .main_title{
+    h2{
+        margin: 1vw 0;
+        font-size: 7vw;
+    }}
 
     .my_skills {
-        width: 360px;
+        width: 90vw;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        h2{
-            width: 80vw;
-        }
-
-        .skills_list {
-            width: 360px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        h2 {
+        width: 80vw;
+    }
     }
 
 }
