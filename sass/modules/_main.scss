@@ -6,7 +6,7 @@
     text-align: center;
 
     h2 {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 }
 
@@ -22,7 +22,7 @@
 .thumbnail{
     display: flex;
     width: 18vw;
-    justify-content: left;
+    justify-content: center;
     align-items: flex-end;
     margin: 7px;
     transition: scale 0.2s ease;
@@ -36,7 +36,7 @@
         margin: 30px;
         font-size: 2vw;
         color: white;
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -110,7 +110,7 @@
     .main_title{
     h2{
         margin: 1vw 0;
-        font-size: 7vw;
+        font-size: 8vw;
     }}
 
     .my_skills {

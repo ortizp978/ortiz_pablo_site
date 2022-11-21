@@ -45,6 +45,10 @@ header {
     padding: 15px 4vw;
     align-items: center;
 
+    .main_logo{
+        width: 40vw;
+    }
+
     .main_menu {
         display: flex;
         flex-direction: column;

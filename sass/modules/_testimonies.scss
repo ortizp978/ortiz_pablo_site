@@ -5,13 +5,14 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    background-color: gray;
+    background-color: #005984;
 
     h2{
         width: 60vw;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
+        color: white;
     }
     }
 
@@ -23,9 +24,9 @@
 
     .testimonie_thumbnail{
         margin: 0 1vw;
-        background-color: aqua;
+        background-color: #00C1DE;
         border-radius: 25px;
-        width: 28vw;
+        width: 31vw;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -39,6 +40,7 @@
         flex-direction: column;
         display: flex;
         justify-content: center;
+        
 
         h3 {
             font-weight: 700;
