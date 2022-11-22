@@ -38,19 +38,15 @@
     </section>
 
     <div class="main_title"><h2>From the pencil to computer;<br>loving when design<br>turning the simple in better</h2></div>
-    <section class="portfolio_gallery">
-        <div class="thumbnail"><a href="projects.html"><img src="images/home_project1.png" alt="Work section main photo"></a>
-            <h2>Pizza Project</h2>
-        </div>
-        <div class="thumbnail"><a href="projects.html"><img src="images/home_project2.png" alt="Work section main photo"></a>
-            <h2>Tilex with Mouthwash</h2>
-        </div>
-        <div class="thumbnail"><a href="projects.html"><img src="images/home_project3.png" alt="Work section main photo"></a>
-            <h2>Elin Cosmetics</h2>
-        </div>
-        <div class="thumbnail"><a href="projects.html"><img src="images/home_project4.png" alt="Work section main photo"></a>
-            <h2>Deodorant<br>Arden for Men</h2>
-        </div>
+
+    <section id="container">
+        <nav class="portfolio_gallery">
+            <ul class="thumbnail">
+                <portfoliothumbnail @loadlb="loadLightBox" v-for="portfolio in portfolioData"   :portfolio="portfolio"></portfoliothumbnail>
+            </ul>
+        </nav>
+
+        <lightbox @closelb="this.showLightBox = false" v-if="showLightBox" :portfolio="lightboxData"></lightbox>
     </section>
 
     <section class="my_skills">
@@ -99,7 +95,7 @@
         </section>
     </footer>
 
-    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/main.js" type="module" defer></script>
 </body>
 </html>

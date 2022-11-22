@@ -1,0 +1,46 @@
+{
+    "pizzaProject": {
+        "name": "Pizza Project",
+        "thumbnailPic": "home_project1.png",
+        "text1": "Algo chimbita",
+        "text2": "Otra cosa más chimbita y más larguita",
+        "image1":"project_1_1.jpg",
+        "image2":"project_1_2.jpg",
+        "image3":"project_1_3.jpg",
+        "image4":"project_1_4.jpg"
+    },
+
+    "tilex": {
+        "name": "Tilex with Mouthwash",
+        "thumbnailPic": "home_project2.png",
+        "text1": "Algo chimbita",
+        "text2": "Otra cosa más chimbita y más larguita",
+        "image1":"project_2_1.jpg",
+        "image2":"project_2_2.jpg",
+        "image3":"project_2_3.jpg",
+        "image4":"project_2_4.jpg"
+    },
+
+    "elin": {
+        "name": "Elin Cosmetics",
+        "thumbnailPic": "home_project3.png",
+        "text1": "Algo chimbita",
+        "text2": "Otra cosa más chimbita y más larguita",
+        "image1":"project_3_1.jpg",
+        "image2":"project_3_2.jpg",
+        "image3":"project_3_3.jpg",
+        "image4":"project_3_4.jpg"
+    },
+
+    "arden": {
+        "name": "Arden for Men",
+        "thumbnailPic": "home_project4.png",
+        "text1": "Algo chimbita",
+        "text2": "Otra cosa más chimbita y más larguita",
+        "image1":"project_4_1.jpg",
+        "image2":"project_4_2.jpg",
+        "image3":"project_4_3.jpg",
+        "image4":"project_4_4.jpg"
+    }
+
+}
