@@ -35,10 +35,10 @@ footer{
 }
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 
     footer {
-        width: 360px;
+        width: 100vw;
     
         .footer_info {
             display: flex;

@@ -32,10 +32,10 @@ body {
         }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
     
     body {
-        width: 360px;
+        width: 100vw;
 
         h2{font-size: 25px;}
         h3{font-size: 20px;}
