@@ -17,7 +17,7 @@ const { createApp } = Vue
 
 createApp({
     created() {
-        fetch('./data.json')
+        fetch('./scripts/json.php')
             .then(res => res.json())
             .then(data => this.portfolioData = data)
             .catch(error => console.error(error));
