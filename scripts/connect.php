@@ -5,14 +5,15 @@
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
 
-    $user = "root";
-    $pass = "root";
-    $url = "localhost";
-    $db = "db_portfolio";
+    $user = "u578555810_pablo_ortiz";
+    $pass = "Noviembre25*";
+    $url = "sql761.main-hosting.eu";
+    $db = "u578555810_db_portfolio";
 
     // Connect to our db
 
-    $link = mysqli_connect($url, $user, $pass, $db, "8888");
+    $link = mysqli_connect($url, $user, $pass, $db);
+    echo($link);
 
     // Check our connection
 

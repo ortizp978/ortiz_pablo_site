@@ -1,4 +1,4 @@
-export default {
+const theThumbnail = {
     name: 'ThePortfolioThumb',
 
     props: {

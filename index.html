@@ -73,11 +73,18 @@
         <img src="images/chat.svg" alt="Work section main photo">
         <div class="contact_text"><p>Successes are never achieved alone; Let's talk for a while and tell me how I can help you improve your ideas !</p></div>
 
-        <form class="contact_form" action="email.php" method="POST" enctype="text/plain">
-            <input class="name" name="firstname" type="text" placeholder="NAME">
-            <input class="email" name="lastname" type="text" placeholder="EMAIL">
-            <textarea class="subject" name="msg" placeholder="MESSAGE"></textarea>
-            <input class="sendButtom" name="submit" type="submit" value="SEND">
+        <form class="contact_form" action="send.php" method="POST" enctype="text/plain" id="mail-form">
+            <input v-model="form.name" class="name" name="firstname" type="text" placeholder="NAME" required="required">
+            <div class="errorMessage" v-if="errorName">Please fill the spaces completely</div>
+
+            <input v-model="form.email" class="email" name="email" type="text" placeholder="EMAIL" required="required">
+            <div class="errorMessage" v-if="errorEmail">Please fill the spaces completely</div>
+
+            <textarea v-model="form.text" class="subject" name="msg" placeholder="MESSAGE" cols="30" rows="10"></textarea>
+            <div class="errorMessage" v-if="errorInMessage">Please fill the spaces completely</div>
+
+            <div class="success" v-if="successMessage">MESSAGE SENT! WELL DONE!</div>
+            <input @click.prevent="processMail" class="sendButtom" name="submit" type="submit" value="SEND">
         </form>
     </div>
     </section>
@@ -96,6 +103,9 @@
     </footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/components/TheLightBoxComponent.js"></script>
+    <script src="js/components/ThePortfolioThumbnail.js"></script>
+
     <script src="js/main.js" type="module" defer></script>
 </body>
 </html>
