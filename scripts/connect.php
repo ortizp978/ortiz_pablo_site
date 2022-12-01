@@ -7,13 +7,13 @@
 
     $user = "u578555810_pablo_ortiz";
     $pass = "Noviembre25*";
-    $url = "sql761.main-hosting.eu";
+    $url = "localhost";
     $db = "u578555810_db_portfolio";
 
     // Connect to our db
 
     $link = mysqli_connect($url, $user, $pass, $db);
-    echo($link);
+    //echo($link);
 
     // Check our connection
 

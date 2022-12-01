@@ -46,7 +46,7 @@
             </ul>
         </nav>
 
-        <lightbox @closelb="this.showLightBox = false" v-if="showLightBox" :portfolio="lightboxData"></lightbox>
+        <lightbox id="projects" @closelb="this.showLightBox = false" v-if="showLightBox" :portfolio="lightboxData"></lightbox>
     </section>
 
     <section class="my_skills">
@@ -73,14 +73,14 @@
         <img src="images/chat.svg" alt="Work section main photo">
         <div class="contact_text"><p>Successes are never achieved alone; Let's talk for a while and tell me how I can help you improve your ideas !</p></div>
 
-        <form class="contact_form" action="send.php" method="POST" enctype="text/plain" id="mail-form">
-            <input v-model="form.name" class="name" name="firstname" type="text" placeholder="NAME" required="required">
+        <form ref="form" class="contact_form" action="includes/send.php" method="POST" enctype="text/plain" id="mail-form">
+            <input v-model="form.name" class="name" name="firstname" type="text" placeholder="NAME" required="required" ref="firstname">
             <div class="errorMessage" v-if="errorName">Please fill the spaces completely</div>
 
-            <input v-model="form.email" class="email" name="email" type="text" placeholder="EMAIL" required="required">
+            <input v-model="form.email" class="email" name="email" type="text" placeholder="EMAIL" required="required" ref="email">
             <div class="errorMessage" v-if="errorEmail">Please fill the spaces completely</div>
 
-            <textarea v-model="form.text" class="subject" name="msg" placeholder="MESSAGE" cols="30" rows="10"></textarea>
+            <textarea v-model="form.text" class="subject" name="msg" placeholder="MESSAGE" cols="30" rows="10" ref="msg"></textarea>
             <div class="errorMessage" v-if="errorInMessage">Please fill the spaces completely</div>
 
             <div class="success" v-if="successMessage">MESSAGE SENT! WELL DONE!</div>
@@ -105,6 +105,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/components/TheLightBoxComponent.js"></script>
     <script src="js/components/ThePortfolioThumbnail.js"></script>
+    <script src="js/components/mailer.js"></script>
 
     <script src="js/main.js" type="module" defer></script>
 </body>

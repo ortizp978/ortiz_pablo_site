@@ -1,6 +1,6 @@
 //import PortfolioThumb from './components/ThePortfolioThumbnail.js';
 //import Lightbox from './components/TheLightboxComponent.js';
-import { SendMail } from "./components/mailer.js";
+//import { SendMail } from "./components/mailer.js";
 
 (() => {
 
@@ -54,24 +54,24 @@ createApp({
             successMessage: false,
 
             form: {
-                name: "",
+                firstname: "",
                 email: "",
-                text: ""
+                msg: ""
             }
         }
     },
 
     methods: {
         processMailFailure(result) {
-            if(this.form.name.length > 0){
-            this.$refs.name.classList.remove("error");
+            if(this.form.firstname.length == 0){
+            this.$refs.firstname.classList.remove("error");
             this.errorName = false;
             } else {
-            this.$refs.name.classList.add("error");
+            this.$refs.firstname.classList.add("error");
             this.errorName = true;
             } 
 
-            if(this.form.email.length > 0){
+            if(this.form.email.length == 0){
             this.$refs.email.classList.remove("error");
             this.errorEmail = false;
             } else {
@@ -79,20 +79,20 @@ createApp({
             this.errorEmail = true;
             }
 
-            if(this.form.text.length > 0){
-            this.$refs.message.classList.remove("error");
+            if(this.form.msg.length == 0){
+            this.$refs.msg.classList.remove("error");
             this.errorInMessage = false;
             } else {
-            this.$refs.message.classList.add("error");
+            this.$refs.msg.classList.add("error");
             this.errorInMessage = true;
             }      
         },
 
         processMailSuccess(result) {
             this.successMessage = true;
-            this.$refs.name.classList.remove("error");
+            this.$refs.firstname.classList.remove("error");
             this.$refs.email.classList.remove("error");
-            this.$refs.message.classList.remove("error");
+            this.$refs.msg.classList.remove("error");
             this.errorName = false;
             this.errorEmail = false;
             this.errorInMessage = false;

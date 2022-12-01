@@ -11,8 +11,8 @@ if ($_POST) {
     $message      = "";
     $fail = array();
 
-    if (isset($_POST['name']) && !empty($_POST['name'])) {
-        $visitor_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    if (isset($_POST['firstname']) && !empty($_POST['name'])) {
+        $visitor_name = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
     }else{
         array_push($fail, "name");
     }
@@ -24,15 +24,15 @@ if ($_POST) {
         array_push($fail, "email");
     }
 
-    if (isset($_POST['message']) && !empty($_POST['message'])) {
-        $clean = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+    if (isset($_POST['msg']) && !empty($_POST['msg'])) {
+        $clean = filter_var($_POST['msg'], FILTER_SANITIZE_STRING);
         $message = htmlspecialchars($clean);
     }else{
-        array_push($fail, "message");
+        array_push($fail, "msg");
     }
 
-    $headers = "From: pablo.ortiz@pablodesigner.com" . "\r\n" .
-    "Reply-To: ortizp@gmail.com" . "\r\n" .
+    $headers = "From: " . $visitor_email . "\r\n" .
+    "Reply-To: "  . $visitor_email .  "\r\n" .
     "X-Mailer: PHP/" . phpversion();
     
     if (count($fail)==0) {
@@ -40,10 +40,10 @@ if ($_POST) {
         $results['message'] = sprintf('Thank you for contacting us, %s. You will get a reply within 24 hours', $visitor_name);
     } else {
         header('HTTP/1.1 488 You Did NOT fill out the form correctly');
-        die(json_encode(["message" => $fail]));
+        die(json_encode(["msg" => $fail]));
     }
 } else {
-    $results['message'] = 'No submission';
+    $results['msg'] = 'No submission';
 }
 
 echo json_encode($results);

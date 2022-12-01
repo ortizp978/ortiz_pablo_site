@@ -1,11 +1,10 @@
 
-//const theMailer = {
 async function SendMail(targetForm) {
     let formData = new FormData(targetForm),
         formFieldErrors = false;
 
 
-    let result = await fetch(`./includes/${targetForm.getAttribute("action")}`, {
+    let result = await fetch(`./${targetForm.getAttribute("action")}`, {
         method: targetForm.method,
         body: formData,
     }).then(response => {
@@ -24,5 +23,3 @@ async function SendMail(targetForm) {
     
     return mailStatus;
 }
-
-export { SendMail };

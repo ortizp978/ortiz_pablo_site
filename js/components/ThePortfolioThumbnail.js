@@ -8,7 +8,7 @@ const theThumbnail = {
     template:
     `
     <li @click="loadLightboxData">
-        <img :src='"images/" + portfolio.thumbnailPic' alt="project image">
+        <a ref="#projects"><img :src='"images/" + portfolio.thumbnailPic' alt="project image"></a>
         <h2>{{portfolio.name}}</h2>
     </li>
     `,
