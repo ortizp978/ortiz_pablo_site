@@ -53,6 +53,28 @@
     }
 }
 
+.reel{
+    width: 55vw;
+    background-color: #005984;
+    border-radius: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px 0;
+    transition: scale 0.2s ease;
+
+    a{
+        font-size: 25px;
+        font-family: 'Anek Malayalam', sans-serif;
+        font-weight: 700;
+        color:white;
+        text-decoration: none;
+    }
+}
+
+.reel:hover {scale: 108%;}
+
 
 @media screen and (max-width: 1279px) {
 
