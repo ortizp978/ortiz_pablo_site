@@ -1,0 +1,115 @@
+#contact_section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 50px;
+    align-items: center;
+    background-color: #00C1DE;
+}
+
+.contact_area{
+    margin-top: 50px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    img {width: 10vw;}
+}
+
+.contact_form{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+}
+
+.contact_text{
+    width: 60vw;
+    margin: 35px 0 0 0 ;
+    text-align: justify;
+
+    p{
+        font-size: 30px;
+        font-family: 'Anek Malayalam', sans-serif;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+.name, .email, .subject{
+    height: 50px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-weight: 300;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #00C1DE;
+    text-align: left;
+}
+
+.subject{
+    height: 200px;
+}
+
+.sendButtom{
+        width: 150px;
+        background-color: #005984;
+        border-radius: 50px;
+        height: 50px;
+        display: flex;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Anek Malayalam', sans-serif;
+        font-weight: 700;
+        color: white;
+        margin-top: 10px;
+        transition: scale 0.2s ease;
+}
+
+.errorMessage {
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px 0;
+    background-color: #f94838;
+    border-radius: 4px;
+}
+
+.success {
+    text-align: center;
+    font-weight: 700;
+    margin: 5px 0;
+    padding: 10px 0;
+    background-color: #0bb76c;
+    border-radius: 4px;
+}
+
+.sendButtom:hover {scale: 105%;}
+
+
+@media screen and (max-width: 600px) {
+
+    .contact_section {
+        width: 100vw;
+    }    
+
+    .contact_area{
+        flex-direction: column;
+        width: 90vw;
+        img {width: 20vw;}
+    }
+
+    .contact_form{
+        width: 90vw;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .contact_text{
+        width: 90vw;
+        margin-top: 20px;   
+    }
+}
