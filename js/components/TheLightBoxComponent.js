@@ -1,4 +1,4 @@
-export default {
+const theLightbox = {
     name: 'TheLightboxComponent',
     
     props: ['portfolio'],

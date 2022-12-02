@@ -46,7 +46,7 @@
             </ul>
         </nav>
 
-        <lightbox @closelb="this.showLightBox = false" v-if="showLightBox" :portfolio="lightboxData"></lightbox>
+        <lightbox id="projects" @closelb="this.showLightBox = false" v-if="showLightBox" :portfolio="lightboxData"></lightbox>
     </section>
 
     <section class="my_skills">
@@ -73,11 +73,19 @@
         <img src="images/chat.svg" alt="Work section main photo">
         <div class="contact_text"><p>Successes are never achieved alone; Let's talk for a while and tell me how I can help you improve your ideas !</p></div>
 
-        <form class="contact_form" action="email.php" method="POST" enctype="text/plain">
-            <input class="name" name="firstname" type="text" placeholder="NAME">
-            <input class="email" name="lastname" type="text" placeholder="EMAIL">
-            <textarea class="subject" name="msg" placeholder="MESSAGE"></textarea>
-            <input class="sendButtom" name="submit" type="submit" value="SEND">
+        <form ref="form" class="contact_form" action="includes/send.php" method="POST" id="mail-form">
+            <input for="firstname" class="name" placeholder="NAME" v-model="form.firstname" ref="fname" type="text" id="firstname" name="firstname" required="required">
+            <div class="errorMessage" v-if="errorFirstName">Please fill the spaces completely ;)</div>
+
+            <input for="email" class="email" placeholder="EMAIL" v-model="form.email" ref="email" type="email" id="email" name="email" required>
+            <div class="errorMessage" v-if="errorEmail">Please fill the spaces completely ;)</div>
+
+            <textarea class="subject" placeholder="MESSAGE" v-model="form.text" ref="message" name="message" id="message" cols="30" rows="10"></textarea>
+            <div class="errorMessage" v-if="errorInMessage">Please fill the spaces completely ;)</div>
+
+            <div class="success" v-if="successMessage">MESSAGE SENT! WELL DONE!</div>
+
+            <input @click.prevent="processMail" class="sendButtom" type="submit" value="SEND">
         </form>
     </div>
     </section>
@@ -96,6 +104,9 @@
     </footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/components/TheLightBoxComponent.js"></script>
+    <script src="js/components/ThePortfolioThumbnail.js"></script>
+    <!-- <script src="js/components/mailer.js"></script> -->
     <script src="js/main.js" type="module" defer></script>
 </body>
 </html>
